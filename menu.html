@@ -1,25 +1,74 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>Menu | Lahani</title>
-    <link href="assets/style.css" rel="stylesheet" type="text/css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
 
-  <body style="text-align:center; ">
-    <nav class="nav">
-      <div id="logo-container">
-        <a href="#" onclick="window.location = '/'">
-          <img src="img/Lahani Logo.png" />
-        </a>
-      </div>
-    </nav>
-    <h1 style="font-size:50px;">Menu</h1>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width" />
+	<title>Menu | Lahani</title>
+	<link href="assets/styles/style.css" rel="stylesheet" type="text/css" />
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+		rel="stylesheet" />
+</head>
+
+<body style="text-align:center; ">
+	<nav class="nav">
+		<div id="logo-container">
+			<img id="go-home" src="img/Lahani Logo.png" />
+		</div>
+	</nav>
+	<div class="content">
+		<div>
+			<p class="page-intro">
+				Welcome to our online menu! Here, you can plan on what you're going to eat, or set your mind on
+				something to pick up for takeout. We've labeled each meal with diets that work with them, so you can
+				feel safe and assured that you're eating your choice. Hover over a diet circle (<span title="Vegan"
+					class="diet VP" style="padding: 4px; font-size: 14px;">V+</span>) to see what it means.
+			</p>
+		</div>
+		<table id="menu">
+			<tbody>
+				<thead id='info-head'>
+					<th>Name</th>
+					<th>Price</th>
+					<th>Diets</th>
+					<th>Rating</th>
+					<th>Description</th>
+				</thead>
+			</tbody>
+		</table>
+	</div>
+</body>
+<script src="assets/scripts/script.js"></script>
+<script src="assets/scripts/menu.js"></script>
+
+</html>
+
+<!-- 
+Appetizers
+House salad____________________2.99
+
+Caesar salad____________________2.99
+
+Vegetable soup_________________3.99
+
+Fruit cocktail____________________4.99
+
+3 Bean chili____________________5.99
+
+Entrees
+Coconut rice bowls
+
+tofu 11.99 | soybean 11.99 | vegetable 12.99
+
+Lunch Specials
+Dinner Specials
+Desserts
+Oat milk flan__________________6.99
+
+Drinks
+ -->
+<!--
+ <h1 style="font-size:50px;">Menu</h1>
     <h2 style="font-size:30px;">Appetizers</h2>
     <p><b>House salad____________________2.99</b></p>
     <p><b>Caesar salad____________________2.99</b></p>
@@ -34,7 +83,4 @@
     <h2 style="font-size:30px;">Desserts</h2>
     <p><b>Oat milk flan__________________6.99</b></p>
     <h2 style="font-size:30px;">Drinks</h2>
-    <div class="content"></div>
-  </body>
-  <script src="assets/script.js"></script>
-</html>
+-->

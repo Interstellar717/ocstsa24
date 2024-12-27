@@ -1,0 +1,12 @@
+{
+    "manifest_version" : 3,
+    "name" : "OCS TSA 24-25: Lahani",
+    "description" : "",
+    "permissions" : [],
+    "version" : "1.0.0",
+    "action": {},
+    "background" : {},
+    "icons" : {
+        "256": "img/Lahani Logo.png"
+    }
+}
