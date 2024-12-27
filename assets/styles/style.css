@@ -1,1 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
+* {
+  font-family: 'Nunito';
+  --blue-dark: hsl(199, 97%, 25%);
+  --blue-light: hsl(199, 97%, 50%);
+  --green-light: hsl(106, 53%, 78%);
+  --green-dark: hsl(106, 53%, 39%);
+  --gray-light: rgb(174, 174, 174);
+  --gray-dark: rgb(92, 92, 92);
+}
+
+html,
+body,
+.content {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+body {
+  /* because of the navbar being position:absolute, we need to move the body down */
+  margin-top: 120px;
+  height: calc(100% - 120px);
+  background-color: #f5f5f5;
+  text-align: center;
+}
+
+.nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 110px;
+  background-color: var(--green-dark);
+}
+
+#logo-container img {
+  width: 120px;
+  margin: 8px 11px 0px;
+}
+
+#go-home {
+  cursor: pointer;
+}
+
+a {
+  color: var(--blue-light);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.sidebar-margin {
+  height: 100%;
+  background: linear-gradient(var(--green-dark), var(--green-light));
+  width: 200px;
+  margin: -10px 10px 0px -10px;
+}
+
+.links-container {
+  width: auto;
+}
+
+.link-row {
+  display: flex;
+  width: fit-content;
+  height: 300px;
+  margin: 20px 5% 20px 5%;
+  border-radius: 22px;
+  border: solid var(--green-dark) 2px;
+}
+
+.link-desc {
+  width: 500px;
+  font-size: 1.3em;
+  padding-right: 30px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-color: #E1E1E1;
+  height: 100%;
+  margin-top: -4%;
+}
+
+.link-row p {
+  padding: 5%;
+  font-size: 1.5em;
+}
+
+.link-row h1 {
+  margin-bottom: -5%;
+  padding-top: 5%;
+}
+
+.link-row a {
+  text-decoration: none;
+}
+
+.link-img img {
+  width: 100%;
+  height: 100%;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.animation-linked {
+  animation: scroll-ani linear;
+  animation-timeline: scroll();
+  transform: translateY(0px);
+}
+
+@keyframes scroll-ani {
+  from {
+    transform: translateY(0px);
+  }
+
+  to {
+    transform: translateY(var(--ani-motion));
+  }
+}
+
+#menu {
+  background-color: black;
+  width: 80%;
+  margin: auto;
+}
+
+td,
+th {
+  background-color: white;
+  width: 100px;
+  height: 75px;
+  font-size: 20px;
+}
+
+/* .item-name {
+
+}
+
+.item-price {
+
+}
+
+.item-diets {
+
+}
+*/
+
+.item-rating {
+  min-width: 114px;
+}
+
+.item-desc {
+  width: 350px;
+}
+
+p.page-intro {
+  font-size: 15px;
+  width: 50%;
+  margin: 20px auto 10px;
+}
+
+img.star {
+  width: 20px;
+  height: 20px;
+}
+
+.diet {
+  border-radius: 50%;
+  padding: 7px;
+  display: inline;
+}
+
+.V {
+  background-color: rgb(129, 232, 34);
+}
+
+.OV {
+  background-color: yellow;
+}
+
+.LV {
+  background-color: ivory;
+}
+
+.VP {
+  background-color: rgb(18, 164, 18);
+}
+
+/* .tooltip {
+  visibility: hidden;
+  position: absolute;
+  border-radius: 1em;
+  background-color: rgba(0, 0, 0, 0.5);
+  bottom: 100%;
+}
+
+.diet:hover .tooltip {
+  visibility: visible;
+} */

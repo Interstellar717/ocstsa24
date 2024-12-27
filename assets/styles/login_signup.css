@@ -1,0 +1,78 @@
+
+.content {
+    width: 100%;
+    text-align: center;
+    display: ruby;
+}
+input {
+    margin: 2px;
+    border: none;
+    outline: none;
+    border-bottom: solid var(--gray-light) 1px;
+}
+
+input:focus {
+    border-bottom: solid var(--gray-dark) 1px;
+}
+
+input[type="text"], input[type="password"] {
+    margin: 4px;
+    padding: 10px;
+    width: 250px;
+    height: 35px;
+    font-size: 20px;
+}
+
+input[type="button"], input[type="submit"], button {
+    background-color: var(--blue-light);
+    border-radius: 0.3em;
+}
+
+#submit {
+    margin-top: 10px;
+    font-size: 15px;
+    height: 30px;
+    width: 275px;
+    --h: 199;
+    --s: 97%;
+    --l: 50%;
+    color: white;
+    font-weight: 500;
+}
+
+#login-form, #signup-form {
+    margin: 20px;
+}
+
+body {
+    background: linear-gradient(var(--green-dark) 20%,  var(--green-light));
+}
+
+#login-form-container, #signup-form-container {
+    background: linear-gradient(var(--green-light) 20%,  var(--green-dark));
+    background: white;
+    /*border: solid white 3px;*/  
+    border-radius: 1.5em;
+    width: 381px;
+    height: 450px;
+    text-align: center;
+}
+.white-background {
+    background-color: white;
+    height: 95%;
+    width: 95%;
+    border-radius: 1.5em;
+    text-align: center;
+    margin-left: 2.5%;
+    margin-top: -4%;
+}
+
+.hover-change {
+    background-color: hsl(var(--h), var(--s), var(--l));
+}
+.hover-change:hover {
+    background-color: hsl(var(--h), var(--s), calc(var(--l) - 5%));
+}
+.hover-change:active {
+    background-color: hsl(var(--h), var(--s), calc(var(--l) - 10%));
+}
