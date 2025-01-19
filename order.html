@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Order now | Lahani</title>
+  <link href="assets/styles/style.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <link rel="shortcut icon" href="img/Lahani Logo.png" type="image/x-icon">
+
+</head>
+
+<body>
+  <nav id="nav">
+    <div id="logo-container">
+      <img id="go-home" src="img/Lahani Logo.png" />
+    </div>
+    <div id="nav-links-row">
+      <a class="nav-link" href="about.html">
+        <div>About Us</div>
+      </a>
+      <a class="nav-link" href="menu.html">
+        <div>Menu</div>
+      </a>
+      <a class="nav-link" href="order.html">
+        <div>Order</div>
+      </a>
+    </div>
+    <div id="account-container">
+      <span>
+        <img id="pfp" src="https://secure.gravatar.com/avatar/15f8001624bd5b624aa2c00d0d25b1f4?s=168&d=mm&r=g">
+        Not Signed In
+      </span>
+      <div id="options">
+        <table>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+  </nav>
+
+  <div class="content" style="display: flex;">
+    <div class="order-sidebar hide-scroll">
+      <img src="img/Lahani Alt Logo.png" class="background-logo">
+      <div class="meal-list">
+        <table class="meal-info">
+          <tbody>
+            <tr>
+              <td><select class="meal-select gray-btn hover-change"></select></td>
+              <td><span class="meal-price"></span></td>
+              <td><span class="meal-diets"></span></td>
+              <td><span class="meal-desc"></span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="checkout-sidebar hide-scroll">
+      <div class="info">
+        <span class="price"></span>
+      </div>
+      <span id="leave-blank">Leave any unnecessary items blank, they will be discounted.</span><br><br>
+      <div id="checkout-sidebar-button-container">
+        <button id="add-item" class="gray-btn hover-change">Add Item</button>
+        <button id="clear-order" class="gray-btn hover-change">Clear Order</button>
+        <button id="checkout" class="gray-btn hover-change">Check Out</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="checkout-menu" style="display: none;">
+    <div id="checkout-menu-container" class="hide-scroll">
+      <table id="checkout-items">
+        <thead>
+          <th>Name</th>
+          <th>Count</th>
+          <th>Price</th>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <span id="checkout-price"></span>
+      <br>
+      <a id="checkout-exit"><button class="gray-btn hover-change">Go Back</button></a>
+      <button id="checkout-pay" class="gray-btn hover-change">Pay</button>
+    </div>
+  </div>
+
+  <div id="meal-select-menu" style="display: none;">
+    <div id="meal-select-menu-container" class="hide-scroll">
+      <div class="tab-bar"></div>
+      <button id="close-meal-select-menu" class="gray-btn hover-change">X</button>
+    </div>
+  </div>
+
+</body>
+
+<script src="assets/scripts/script.js"></script>
+<script src="assets/scripts/order.js"></script>
+
+</html>

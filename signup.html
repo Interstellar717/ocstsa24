@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Sign Up | Lahani</title>
+  <link href="assets/styles/style.css" rel="stylesheet" type="text/css" />
+  <link href="assets/styles/login_signup.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <link rel="shortcut icon" href="img/Lahani Logo.png" type="image/x-icon">
+
+  <link rel="prefetch" href="login.html"> <!-- for smooth transition -->
+
+</head>
+
+<body>
+  <nav id="nav">
+    <div id="logo-container">
+      <img id="go-home" src="img/Lahani Logo.png" />
+    </div>
+    <div id="nav-links-row">
+      <a class="nav-link" href="about.html">
+        <div>About Us</div>
+      </a>
+      <a class="nav-link" href="menu.html">
+        <div>Menu</div>
+      </a>
+      <a class="nav-link" href="order.html">
+        <div>Order</div>
+      </a>
+    </div>
+    <div id="account-container">
+      <span>
+        <img id="pfp" src="https://secure.gravatar.com/avatar/15f8001624bd5b624aa2c00d0d25b1f4?s=168&d=mm&r=g">
+        Not Signed In
+      </span>
+      <div id="options">
+        <table>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+  </nav>
+
+  <div class="content">
+    <div class="flex">
+      <div id="signup-form-container">
+        <form id="signup-form">
+          <h1 style="font-size: 40px;">Sign Up</h1>
+          <input type="text" id="username_signup" placeholder="Username" autocomplete="off" />
+          <br>
+          <input type="password" id="password_signup" placeholder="Password" autocomplete="off" />
+          <br>
+          <input type="submit" id="submit" value="Sign Up" class="hover-change" />
+          <h5 style="text-align: right; margin-right: 30px;"><a href="login.html">Have an account? Log in!</a></h5>
+        </form>
+      </div>
+    </div>
+    <div class="flex">
+      <div id="login-form-container" class="no-animation"
+        style="animation: slide-out-top-login-signup 1s; position: absolute; display: none;transform: translateY(-100%);">
+        <form id="login-form">
+          <h1 style="font-size: 40px;">Login</h1>
+          <input type="text" id="username_login" placeholder="Username" autocomplete="off" />
+          <br>
+          <input type="password" id="password_login" placeholder="Password" autocomplete="off" />
+          <br>
+          <input type="submit" id="submit" value="Login" class="hover-change" />
+          <h5 style="text-align: right; margin-right: 30px;"><a href="signup.html">New? Create an Account!</a></h5>
+          <h5 style="text-align: right; margin-right: 30px;"><a href="fyp.html">Forgot your password?</a></h5>
+          <h5 style="text-align: right; margin-right: 30px;"><a href="" id="guest">Login as Guest</a></h5>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="assets/scripts/script.js"></script>
+<script src="assets/scripts/signup.js"></script>
+
+</html>
