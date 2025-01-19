@@ -186,9 +186,14 @@ function checkout() {
 
 function set_checkout_info() {
     qs('#checkout-price').innerHTML = `<div style="font-size: 20px; margin-bottom: auto;">Total Cost: </div>${price_format(qs('span.price').textContent.split('$')[1])}`;
+    
     var remove_duplicates = [];
+    var list = [];
+    for (let i of select.querySelectorAll('option')) {
+        list.push(i.textContent);
+    }
     for (let i of meals) {
-        let meal_price = menu[Object.keys(menu)[i]].price;
+        let meal_price = find_in_menu(list[i]).price;
 
         if (!remove_duplicates[i]) {
             remove_duplicates[i] = [1, meal_price];
@@ -201,7 +206,7 @@ function set_checkout_info() {
     let html = ``;
     for (let [k, v] of Object.entries(remove_duplicates)) {
 
-        html += `<tr><td>${Object.keys(menu)[k]}</td> <td>x${v[0]}</td> <td>${price_format(v[1])}</td> </tr>`;
+        html += `<tr><td>${list[k]}</td> <td>x${v[0]}</td> <td>${price_format(v[1])}</td> </tr>`;
     }
     qs('#checkout-items tbody').innerHTML = html;
     qs('#checkout-exit').addEventListener('click', checkout_exit)
