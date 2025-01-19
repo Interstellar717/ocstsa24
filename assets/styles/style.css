@@ -2,7 +2,7 @@
 
 @font-face {
 	font-family: "msr";
-	src: url('/fonts/msr.woff2');
+	src: url('fonts/msr.woff2');
 }
 
 @keyframes slide-in-top {
